@@ -2,7 +2,7 @@
 
 Aplicação web para o site de um casamento, com área pública para apresentação do evento e área autenticada para gerenciamento de convidados, confirmação de presença (RSVP) e lista de presentes.
 
-O projeto também tem como objetivo servir como aplicação prática para estudo e desenvolvimento de uma arquitetura web completa, envolvendo **frontend, backend, banco de dados, autenticação, autorização e regras de negócio**.
+O projeto tem como objetivo servir como aplicação prática para estudo e desenvolvimento de uma arquitetura web completa, envolvendo **frontend, backend, banco de dados, autenticação, autorização e regras de negócio**.
 
 ---
 
