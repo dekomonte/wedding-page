@@ -1,6 +1,6 @@
 # 💍 Wedding Page
 
-Aplicação web para o site de um casamento, com área pública para apresentação do evento e área autenticada para gerenciamento de convidados, confirmação de presença (RSVP) e lista de presentes.
+Aplicação web para o site de um casamento, com área pública para apresentação do evento e área autenticada para gerenciamento de convidados, confirmação de presença e lista de presentes.
 
 O projeto tem como objetivo servir como aplicação prática para estudo e desenvolvimento de uma arquitetura web completa, envolvendo **frontend, backend, banco de dados, autenticação, autorização e regras de negócio**.
 
@@ -8,7 +8,7 @@ O projeto tem como objetivo servir como aplicação prática para estudo e desen
 
 ## 🎯 Objetivos
 
-* Criar uma página personalizada para o casamento.
+* Criar uma página personalizada para um casamento.
 * Permitir que convidados confirmem presença.
 * Permitir o gerenciamento de acompanhantes.
 * Disponibilizar uma lista de presentes com controle de reservas.
@@ -23,10 +23,7 @@ O projeto tem como objetivo servir como aplicação prática para estudo e desen
 O sistema terá três níveis de acesso:
 
 ### Administrador
-
 Acesso total ao sistema.
-
-Pode:
 
 * Gerenciar usuários;
 * Gerenciar convidados;
@@ -36,10 +33,7 @@ Pode:
 * Visualizar todas as informações.
 
 ### Noivos
-
 Acesso à área de gestão do casamento.
-
-Podem:
 
 * Visualizar o total de convidados;
 * Visualizar confirmações de presença;
@@ -49,10 +43,7 @@ Podem:
 * Visualizar quais convidados reservaram cada presente.
 
 ### Convidado
-
 Acesso limitado à área autenticada.
-
-Pode:
 
 * Criar uma conta;
 * Fazer login;
@@ -76,8 +67,6 @@ Pode:
 * [ ] Informações úteis para os convidados
 * [ ] Acesso à área de login/cadastro
 
----
-
 ## 2. Autenticação
 
 * [ ] Cadastro de convidados
@@ -89,8 +78,6 @@ Pode:
 * [ ] Persistência da sessão
 * [ ] Controle de acesso baseado em perfil (RBAC)
 * [ ] Recuperação de senha *(futuro)*
-
----
 
 ## 3. RSVP — Confirmação de Presença
 
@@ -275,7 +262,7 @@ Essa separação permite desenvolver e substituir as camadas de forma independen
 
 ## Backend
 
-**A definir.**
+**Definida: NestJS**
 
 Opções consideradas:
 
@@ -286,7 +273,7 @@ Opções consideradas:
 
 ## Frontend
 
-**A definir.**
+**Definida: Next.js**
 
 Opções consideradas:
 
@@ -297,7 +284,7 @@ Opções consideradas:
 
 ## Banco de Dados
 
-**A definir.**
+**Definida: PostgreSQL**
 
 Opções consideradas:
 
