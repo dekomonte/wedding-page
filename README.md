@@ -262,3 +262,84 @@ wedding-page/
 ## 📌 Status
 
 **Em planejamento.**
+
+---
+## Modelagem Banco de Dados
+
+┌──────────────────────┐
+│        USERS         │
+├──────────────────────┤
+│ PK id                │
+│    nome              │
+│    email             │
+│    senha_hash        │
+│    role              │
+│    created_at        │
+│    updated_at        │
+└──────────┬───────────┘
+           │
+           │ 1:1
+           ▼
+┌──────────────────────┐
+│       GUESTS         │
+├──────────────────────┤
+│ PK id                │
+│ FK user_id           │
+│    ...               │
+└──────────┬───────────┘
+           │
+           │ 1:N
+           ▼
+┌──────────────────────┐
+│        RSVP          │
+├──────────────────────┤
+│ PK id                │
+│ FK guest_id          │
+│    status            │
+│    qtd_acompanhantes │
+│    mensagem          │
+│    created_at        │
+│    updated_at        │
+└──────────────────────┘
+
+
+┌──────────────────────┐
+│        GIFTS         │
+├──────────────────────┤
+│ PK id                │
+│    nome              │
+│    descricao         │
+│    preco              │
+│    imagem_url        │
+│    created_at        │
+│    updated_at        │
+└──────────┬───────────┘
+           │
+           │ 1:N
+           ▼
+┌──────────────────────┐
+│    RESERVATIONS      │
+├──────────────────────┤
+│ PK id                │
+│ FK gift_id           │
+│ FK guest_id          │
+│    created_at        │
+│    cancelled_at      │
+└──────────────────────┘
+
+
+Relação Geral
+USER
+ │
+ │ 1:1
+ ▼
+GUEST
+ │
+ ├────────────── 1:N ──────────────► RSVP
+ │
+ │
+ └────────────── 1:N ──────────────► RESERVATION
+                                          │
+                                          │ N:1
+                                          ▼
+                                        GIFT
