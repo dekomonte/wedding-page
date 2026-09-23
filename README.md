@@ -1,3 +1,5 @@
+![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
+
 # 💍 Wedding Page
 
 Aplicação web fullstack para gerenciamento completo de um casamento, com área pública informativa e portal autenticado para **RSVP, acompanhantes, mensagens e lista de presentes**.
@@ -184,11 +186,13 @@ wedding-page/
 ## 🗺️ Roadmap por Milestones
 
 ### 📍 Milestone 1: Fundamentos & Estudos
+
 [ ] Issue 1.1 Estudo de Frontend (React, Next.js App Router, Tailwind CSS)
 
 [ ] Issue 1.2 Estudo de Backend & DB (NestJS, ORM, PostgreSQL, JWT)
 
 ### 📍 Milestone 2: Setup & Banco de Dados
+
 [ ] Issue 2.1 Preparação do ambiente local (Node, Docker, Git, DBeaver)
 
 [ ] Issue 2.2 Estruturação do repositório, Docker Compose e monorepo/pastas
@@ -196,6 +200,7 @@ wedding-page/
 [ ] Issue 2.3 Modelagem Prisma Schema, Migrations e Seeds
 
 ### 📍 Milestone 3: Backend & Regras
+
 [ ] Issue 3.1 Módulo de Autenticação, Tokens (JWT Refresh) e RBAC Guards
 
 [ ] Issue 3.2 Módulo de RSVP (Endpoints, Validações e Regras de Limite)
@@ -203,6 +208,7 @@ wedding-page/
 [ ] Issue 3.3 Módulo de Presentes e Reservas (CRUD e Controle de Estoque)
 
 ### 📍 Milestone 4: Frontend & Interfaces
+
 [ ] Issue 4.1 Layout base, Design System e Páginas Públicas
 
 [ ] Issue 4.2 Contexto de Autenticação, Interceptors e Proteção de Rotas
