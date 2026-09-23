@@ -2,15 +2,16 @@
 
 Aplicação web fullstack para gerenciamento completo de um casamento, com área pública informativa e portal autenticado para **RSVP, acompanhantes, mensagens e lista de presentes**.
 
-Este projeto também é utilizado como estudo prático e consolidação de arquitetura web moderna, cobrindo **frontend, backend, banco de dados relacional, autenticação JWT com Refresh Token, autorização via RBAC e DevOps básico**.
+Este projeto também é utilizado como estudo prático e consolidação de arquitetura web moderna, cobrindo **frontend, backend, banco de dados relacional, autenticação JWT, autorização via RBAC e DevOps**.
 
 ---
 
 ## 📌 Gerenciamento do Projeto (GitHub Project)
 
-O acompanhamento e o fluxo de desenvolvimento do projeto são gerenciados utilizando o **GitHub Projects** (estilo Kanban com suporte a Milestones, Issues e Tasklists).
+O acompanhamento e o fluxo de desenvolvimento do projeto são gerenciados utilizando o **GitHub Projects**.
 
-* 🗺️ **Quadro do Projeto:** [Wedding Page Development Board](https://github.com/seu-usuario/seu-repositorio/projects) *(atualize com o link real do seu project)*
+* 🗺️ **Quadro do Projeto:** [Wedding Page Development Board](https://github.com/users/dekomonte/projects/1)
+
 * 🏷️ **Padrão de Labels:** Categorização por camadas (`frontend`, `backend`, `database`, `devops`, `auth`, `rsvp`, `gifts`, `public`, `admin`, `study`, `setup`, `testing`, `deploy`).
 
 ---
@@ -99,49 +100,70 @@ O acompanhamento e o fluxo de desenvolvimento do projeto são gerenciados utiliz
 │           PostgreSQL                 │
 │      Database (Docker Container)     │
 └──────────────────────────────────────┘
+```
+---
 
-# 🗄️ Modelo de Dados (Relacional)
+## 🗄️ Modelo de Dados (Relacional)
 
 ```text
 [ User ] ─── (1:1) ─── [ Guest ] ─── (1:1) ─── [ RSVP ]
      │
      └─── (1:N) ─── [ Reservation ] ─── (N:1) ─── [ Gift ]
+```
 
 ### Entidades
 
-users: Credenciais, papel/role (ADMIN, HOST, GUEST) e controle de acesso.
+* users: Credenciais, papel/role (ADMIN, HOST, GUEST) e controle de acesso.
 
-guests: Informações do convidado e limite de acompanhantes (max_companions).
+* guests: Informações do convidado e limite de acompanhantes (max_companions).
 
-rsvps: Status da confirmação (CONFIRMED, DECLINED), acompanhantes e mensagem.
+* rsvps: Status da confirmação (CONFIRMED, DECLINED), acompanhantes e mensagem.
 
-gifts: Catálogo de presentes, preço, imagem e quantidade disponível.
+* gifts: Catálogo de presentes, preço, imagem e quantidade disponível.
 
-reservations: Vínculo entre convidado e presente reservado.
+* reservations: Vínculo entre convidado e presente reservado.
 
-🛠️ Tech Stack & Ferramentas
-Frontend
-Framework: Next.js (TypeScript)
+---
 
-Estilização: Tailwind CSS
+## 🛠️ Tech Stack & Ferramentas
 
-Gerenciamento de Estado/HTTP: React Context API / Fetch API / Axios
+### **Frontend**
+![Next.js](https://img.shields.io/badge/Next.js_14+-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Backend
-Framework: NestJS (TypeScript)
+* **Framework:** Next.js 14+ (App Router)
+* **Linguagem:** TypeScript
+* **Estilização:** Tailwind CSS
+* **Gerenciamento de Estado & HTTP:** React Context API, TanStack Query / Axios
 
-ORM: Prisma ORM
+---
 
-Segurança: Passport-JWT, Bcrypt, Class-Validator, Class-Transformer
+### **Backend**
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma_ORM-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
+![JSON Web Tokens](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
 
-Banco de Dados & Infraestrutura
-Banco de Dados: PostgreSQL
+* **Framework:** NestJS
+* **ORM:** Prisma ORM
+* **Segurança & Autenticação:** Passport JWT, Bcrypt, Class-Validator, Class-Transformer
 
-Containerização: Docker & Docker Compose
+---
 
-Hospedagem (Planejada): Vercel (Frontend), Render/Fly.io (Backend e PostgreSQL)
+### **Banco de Dados & Infraestrutura**
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-📁 Estrutura de Pastas
+* **Banco de Dados:** PostgreSQL
+* **Containerização:** Docker & Docker Compose
+* **Hospedagem (Planejada):** Vercel (Frontend), Render / Fly.io (Backend & Database)
+
+---
+
+## 📁 Estrutura de Pastas
+```text
 wedding-page/
 ├── .github/
 │   └── ISSUE_TEMPLATE/     # Templates de Issues em Markdown
@@ -155,28 +177,32 @@ wedding-page/
 │   └── .env.example
 ├── docker-compose.yml      # Configuração do PostgreSQL local
 └── README.md
+```
 
-🗺️ Roadmap por Milestones
-📍 Milestone 1: Fundamentos & Estudos
+---
+
+## 🗺️ Roadmap por Milestones
+
+### 📍 Milestone 1: Fundamentos & Estudos
 [ ] Issue 1.1 Estudo de Frontend (React, Next.js App Router, Tailwind CSS)
 
 [ ] Issue 1.2 Estudo de Backend & DB (NestJS, ORM, PostgreSQL, JWT)
 
-📍 Milestone 2: Setup & Banco de Dados
+### 📍 Milestone 2: Setup & Banco de Dados
 [ ] Issue 2.1 Preparação do ambiente local (Node, Docker, Git, DBeaver)
 
 [ ] Issue 2.2 Estruturação do repositório, Docker Compose e monorepo/pastas
 
 [ ] Issue 2.3 Modelagem Prisma Schema, Migrations e Seeds
 
-📍 Milestone 3: Backend & Regras
+### 📍 Milestone 3: Backend & Regras
 [ ] Issue 3.1 Módulo de Autenticação, Tokens (JWT Refresh) e RBAC Guards
 
 [ ] Issue 3.2 Módulo de RSVP (Endpoints, Validações e Regras de Limite)
 
 [ ] Issue 3.3 Módulo de Presentes e Reservas (CRUD e Controle de Estoque)
 
-📍 Milestone 4: Frontend & Interfaces
+### 📍 Milestone 4: Frontend & Interfaces
 [ ] Issue 4.1 Layout base, Design System e Páginas Públicas
 
 [ ] Issue 4.2 Contexto de Autenticação, Interceptors e Proteção de Rotas
@@ -185,7 +211,7 @@ wedding-page/
 
 [ ] Issue 4.4 Dashboard dos Noivos, Tabela de Confirmações e Gestão de Presentes
 
-📍 Milestone 5: Testes & Deploy
+### 📍 Milestone 5: Testes & Deploy
 [ ] Issue 5.1 Testes unitários/integração, validação responsiva e estados de loading
 
 [ ] Issue 5.2 Provisionamento de Banco Cloud, Deploy da API e publicação na Vercel
