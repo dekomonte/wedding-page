@@ -21,38 +21,38 @@ O acompanhamento e o fluxo de desenvolvimento do projeto são gerenciados utiliz
 ## 🎯 Funcionalidades
 
 ### 🌐 Área Pública
-* [ ] Página inicial (Landing Page com Hero Banner e contagem regressiva)
-* [ ] Nossa história (Linha do tempo interativa e galeria de fotos do casal)
-* [ ] Informações do evento (Data, horário e dress code)
-* [ ] Localização (Mapa interativo para cerimônia e festa)
-* [ ] Dicas úteis (Hospedagem, transporte, salões de beleza e estacionamento)
+- [ ] Página inicial (Landing Page com Hero Banner e contagem regressiva)
+- [ ] Nossa história (Linha do tempo interativa e galeria de fotos do casal)
+- [ ] Informações do evento (Data, horário e dress code)
+- [ ] Localização (Mapa interativo para cerimônia e festa)
+- [ ] Dicas úteis (Hospedagem, transporte, salões de beleza e estacionamento)
 
 ### 🔐 Autenticação & Segurança
-* [ ] Cadastro e login de convidados
-* [ ] Persistência de sessão segura com Access Token (JWT) e Refresh Token
-* [ ] Controle de Acesso Baseado em Funções (**RBAC**) no Backend
-* [ ] Simulação/Recuperação de senha
-* [ ] Encriptação de senhas com algoritmo de Hashing (bcrypt/argon2)
+- [ ] Cadastro e login de convidados
+- [ ] Persistência de sessão segura com Access Token (JWT) e Refresh Token
+- [ ] Controle de Acesso Baseado em Funções (**RBAC**) no Backend
+- [ ] Simulação/Recuperação de senha
+- [ ] Encriptação de senhas com algoritmo de Hashing (bcrypt/argon2)
 
 ### 📩 RSVP (Confirmação de Presença)
-* [ ] Confirmar ou recusar presença
-* [ ] Registro dinâmico de acompanhantes (respeitando o limite do convidado)
-* [ ] Alteração de status da confirmação enquanto o RSVP estiver aberto
-* [ ] Envio de mensagem personalizada dos convidados aos noivos
+- [ ] Confirmar ou recusar presença
+- [ ] Registro dinâmico de acompanhantes (respeitando o limite do convidado)
+- [ ] Alteração de status da confirmação enquanto o RSVP estiver aberto
+- [ ] Envio de mensagem personalizada dos convidados aos noivos
 
 ### 🎁 Lista de Presentes
-* [ ] Visualização interativa do catálogo com filtros e busca
-* [ ] Reserva online de presentes
-* [ ] Controle de estoque/disponibilidade em tempo real
-* [ ] Regra de limite máximo de presentes reservados por convidado
-* [ ] Cancelamento de reserva por parte do convidado
+- [ ] Visualização interativa do catálogo com filtros e busca
+- [ ] Reserva online de presentes
+- [ ] Controle de estoque/disponibilidade em tempo real
+- [ ] Regra de limite máximo de presentes reservados por convidado
+- [ ] Cancelamento de reserva por parte do convidado
 
 ### 👑 Painel dos Noivos & Administração
-* [ ] **Dashboard Resumo:** Total de convidados, presenças, ausências e presentes reservados
-* [ ] Gestão da lista de convidados e visualização de acompanhantes
-* [ ] Leitura das mensagens enviadas pelos convidados
-* [ ] **CRUD de Presentes:** Cadastrar, editar e remover itens do catálogo
-* [ ] Mapeamento e gestão de reservas efetuadas
+- [ ] **Dashboard Resumo:** Total de convidados, presenças, ausências e presentes reservados
+- [ ] Gestão da lista de convidados e visualização de acompanhantes
+- [ ] Leitura das mensagens enviadas pelos convidados
+- [ ] **CRUD de Presentes:** Cadastrar, editar e remover itens do catálogo
+- [ ] Mapeamento e gestão de reservas efetuadas
 
 ---
 
@@ -187,37 +187,38 @@ wedding-page/
 
 ### 📍 Milestone 1: Fundamentos & Estudos
 
-[ ] Issue 1.1 Estudo de Frontend (React, Next.js App Router, Tailwind CSS)
+- [ ] Issue 1.1 Estudo de Frontend (React, Next.js App Router, Tailwind CSS)
 
-[ ] Issue 1.2 Estudo de Backend & DB (NestJS, ORM, PostgreSQL, JWT)
+- [ ] Issue 1.2 Estudo de Backend & DB (NestJS, ORM, PostgreSQL, JWT)
 
 ### 📍 Milestone 2: Setup & Banco de Dados
 
-[ ] Issue 2.1 Preparação do ambiente local (Node, Docker, Git, DBeaver)
+- [ ] Issue 2.1 Preparação do ambiente local (Node, Docker, Git, DBeaver)
 
-[ ] Issue 2.2 Estruturação do repositório, Docker Compose e monorepo/pastas
+- [ ] Issue 2.2 Estruturação do repositório, Docker Compose e monorepo/pastas
 
-[ ] Issue 2.3 Modelagem Prisma Schema, Migrations e Seeds
+- [ ] Issue 2.3 Modelagem Prisma Schema, Migrations e Seeds
 
 ### 📍 Milestone 3: Backend & Regras
 
-[ ] Issue 3.1 Módulo de Autenticação, Tokens (JWT Refresh) e RBAC Guards
+- [ ] Issue 3.1 Módulo de Autenticação, Tokens (JWT Refresh) e RBAC Guards
 
-[ ] Issue 3.2 Módulo de RSVP (Endpoints, Validações e Regras de Limite)
+- [ ] Issue 3.2 Módulo de RSVP (Endpoints, Validações e Regras de Limite)
 
-[ ] Issue 3.3 Módulo de Presentes e Reservas (CRUD e Controle de Estoque)
+- [ ] Issue 3.3 Módulo de Presentes e Reservas (CRUD e Controle de Estoque)
 
 ### 📍 Milestone 4: Frontend & Interfaces
 
-[ ] Issue 4.1 Layout base, Design System e Páginas Públicas
+- [ ] Issue 4.1 Layout base, Design System e Páginas Públicas
 
-[ ] Issue 4.2 Contexto de Autenticação, Interceptors e Proteção de Rotas
+- [ ] Issue 4.2 Contexto de Autenticação, Interceptors e Proteção de Rotas
 
-[ ] Issue 4.3 Formulário do RSVP e Catálogo de Presentes
+- [ ] Issue 4.3 Formulário do RSVP e Catálogo de Presentes
 
-[ ] Issue 4.4 Dashboard dos Noivos, Tabela de Confirmações e Gestão de Presentes
+- [ ] Issue 4.4 Dashboard dos Noivos, Tabela de Confirmações e Gestão de Presentes
 
 ### 📍 Milestone 5: Testes & Deploy
-[ ] Issue 5.1 Testes unitários/integração, validação responsiva e estados de loading
 
-[ ] Issue 5.2 Provisionamento de Banco Cloud, Deploy da API e publicação na Vercel
+- [ ] Issue 5.1 Testes unitários/integração, validação responsiva e estados de loading
+
+- [ ] Issue 5.2 Provisionamento de Banco Cloud, Deploy da API e publicação na Vercel
